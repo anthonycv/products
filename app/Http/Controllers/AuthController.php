@@ -71,7 +71,7 @@ class AuthController extends Controller
                 ]
             ]);
         } catch (ValidationException $e) {
-            return response()->json(['message' => $e->errors()], 400);
+            return response()->json(['errorValidate' => $e->errors()], 400);
         } catch (\Exception $e) {
             return response()->json(['message' => $e->getMessage()], 500);
         }
