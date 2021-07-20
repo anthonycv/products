@@ -1961,9 +1961,9 @@ __webpack_require__.r(__webpack_exports__);
             _this[index + 'Error'] = errorValidate[index][0];
             _this[index + 'Alert'] = true;
           }
+        } else {
+          console.log(err.response.data);
         }
-
-        console.log(err.response.data);
       });
     }
   }

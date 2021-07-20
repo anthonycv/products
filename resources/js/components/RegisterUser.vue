@@ -112,8 +112,9 @@
                             this.[index + 'Error'] = errorValidate[index][0];
                             this.[index + 'Alert'] = true;
                         }
+                    }else{
+                        console.log(err.response.data);
                     }
-                    console.log(err.response.data);
                 });
             }
         }
