@@ -1955,7 +1955,6 @@ __webpack_require__.r(__webpack_exports__);
       })["catch"](function (err) {
         if (typeof err.response.data.errorValidate !== 'undefined') {
           var errorValidate = err.response.data.errorValidate;
-          console.log(errorValidate);
 
           for (var index in errorValidate) {
             _this[index + 'Error'] = errorValidate[index][0];

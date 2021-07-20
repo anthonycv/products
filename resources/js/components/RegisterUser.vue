@@ -107,7 +107,6 @@
                 }).catch((err) => {
                     if (typeof err.response.data.errorValidate !== 'undefined') {
                         const errorValidate = err.response.data.errorValidate;
-                        console.log(errorValidate);
                         for (const index in errorValidate) {
                             this.[index + 'Error'] = errorValidate[index][0];
                             this.[index + 'Alert'] = true;
